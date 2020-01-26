@@ -17,7 +17,7 @@
 
 <details><summary><b>Tips</b></summary>
   <p>
-    <strong>Map</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
+    You can start with a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">joins</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -39,6 +39,7 @@ Post.joins(:comments).where(:comments => {user: User.first})
 
 <details><summary><b>Tips</b></summary>
   <p>
+    One <a href="https://apidock.com/rails/ActiveRecord/QueryMethods/includes">includes</a> a day keep the n + 1 query away.
     <strong>Map</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
   </p>
 
@@ -61,7 +62,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 <details><summary><b>Tips</b></summary>
   <p>
-    <strong>Map</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
+    It's about setting <a href="https://apidock.com/rails/ActiveRecord/QueryMethods/limit">boundaries</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -157,4 +158,45 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 ---
 
+
+##### 7. Get in a array the content of the comments for the last post
+
+<details><summary><b>Tips</b></summary>
+  <p>
+    Spoiler alert: it's a one-liner thanks to a <a href="https://apidock.com/rails/ActiveRecord/Calculations/pluck">this</a>.
+  </p>
+
+  <details><summary><b>Answer</b></summary>
+  <p>
+
+```ruby
+     Post.last.comments.pluck(:content)
+```
+  </p>
+  </details>
+</details>
+
+---
+
+##### 7. We want to make sure that every time a comment is made on a post, the post is updated
+
+<details><summary><b>Tips</b></summary>
+  <p>
+    You'll need a callback and, I'm not kidding, this is an <a href="https://www.youtube.com/watch?v=4G6QDNC4jPs">hint</a>.
+  </p>
+
+  <details><summary><b>Answer</b></summary>
+  <p>
+  You'll have a after_save callback like this in comment:
+
+```ruby
+    def update_post
+      post.touch
+    end
+```
+  </p>
+  </details>
+</details>
+
+---
 

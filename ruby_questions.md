@@ -11,6 +11,9 @@
 
 ---
 
+ 
+ </div>
+
 // What you have
 ```ruby
 Awarded = Struct.new(:year, :name, :category, :contribution, :birthdate)
@@ -26,8 +29,7 @@ nobel_prize_awarded_winners = [
   Awarded.new(1993, 'Toni Morrison', 'Literature', 'who in novels characterized by visionary force and poetic import, gives life to an essential aspect of American reality', 1931)
 ]
 ```
-  
- </div>
+ 
 
 ##### 1. Get the year of when these women got a Nobel Prize Award
 
@@ -74,7 +76,7 @@ nobel_prize_awarded_winners.map { |awarded| awarded.year > 2000 }
 
 ---
 
-##### 3. Get all old they were when they got their award
+##### 3. Get how old they were when they got their award
 
 
 <details><summary><b>Tips</b></summary>
@@ -102,7 +104,7 @@ nobel_prize_awarded_winners.map { |awarded| awarded.year - awarded.birthdate }
 
 <details><summary><b>Tips</b></summary>
   <p>
-    <strong>Inject</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
+    <strong>Inject</strong> method, here is a <a href="https://apidock.com/ruby/Enumerable/inject">tutorial</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>

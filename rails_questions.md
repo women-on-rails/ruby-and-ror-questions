@@ -17,7 +17,7 @@
 
 <details><summary><b>Tips</b></summary>
   <p>
-    You can start with a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">joins</a>.
+    You can start with a <a href="https://apidock.com/rails/ActiveRecord/QueryMethods/joins">joins</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -40,7 +40,6 @@ Post.joins(:comments).where(:comments => {user: User.first})
 <details><summary><b>Tips</b></summary>
   <p>
     One <a href="https://apidock.com/rails/ActiveRecord/QueryMethods/includes">includes</a> a day keep the n + 1 query away.
-    <strong>Map</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -58,7 +57,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 ---
 
 
-##### 3. We want to display the first five posts on our main page, corrects the method in the model Post
+##### 3. We want to display the first five posts on our main page, correct the method in the model Post
 
 <details><summary><b>Tips</b></summary>
   <p>
@@ -118,7 +117,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 ---
 
-##### 6. Make sure that an user can only comment once an article
+##### 6. Make sure that an user can only comment an article once
 
 <details><summary><b>Tips</b></summary>
   <p>
@@ -143,7 +142,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 <details><summary><b>Tips</b></summary>
   <p>
-    You need to write a <a href="https://guides.rubyonrails.org/active_record_validations.html#uniqueness">validation</a>.
+    I don't really have a hint for that because it's kind of <a href="https://www.youtube.com/watch?v=0p_1QSUsbsM">magic</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -159,11 +158,11 @@ Post.includes(:comments).map { |post| post.comments.size }
 ---
 
 
-##### 7. Get in a array the content of the comments for the last post
+##### 8. Get in a array the content of the comments for the last post
 
 <details><summary><b>Tips</b></summary>
   <p>
-    Spoiler alert: it's a one-liner thanks to a <a href="https://apidock.com/rails/ActiveRecord/Calculations/pluck">this</a>.
+    Spoiler alert: it's a one-liner thanks to <a href="https://apidock.com/rails/ActiveRecord/Calculations/pluck">this</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -178,7 +177,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 ---
 
-##### 7. We want to make sure that every time a comment is made on a post, the post is updated
+##### 9. We want to make sure that every time a comment is made on a post, the post is updated
 
 <details><summary><b>Tips</b></summary>
   <p>

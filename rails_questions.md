@@ -177,7 +177,7 @@ Post.includes(:comments).map { |post| post.comments.size }
 
 ---
 
-##### 9. We want to make sure that every time a comment is made on a post, the post is updated
+##### 9. We want to make sure that every time a comment is made on a post, the post timestamps are updated
 
 <details><summary><b>Tips</b></summary>
   <p>

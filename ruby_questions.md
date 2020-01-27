@@ -196,7 +196,7 @@ nobel_prize_awarded_winners.group_by { |awarded| awarded.category }.map { |k,v| 
 
 <details><summary><b>Tips</b></summary>
   <p>
-    There are different methods <a href="https://teamtreehouse.com/library/adding-items-to-arrays-2">group_by</a>to add elements to an array.
+    There are different methods <a href="https://teamtreehouse.com/library/adding-items-to-arrays-2">add elements</a> to an array.
   </p>
 
   <details><summary><b>Answer</b></summary>

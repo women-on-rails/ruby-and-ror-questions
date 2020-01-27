@@ -6,6 +6,7 @@
     ---
 
   <span>To do these excercices, I advise you to open up **IRB** to test your answers, here is a [quickstart](https://www.ruby-lang.org/en/documentation/quickstart/).</span></br>
+  <span>You can also open an IRB [online](https://repl.it/languages/ruby).</span><br/>
   <span>For each question, copy and paste the "What you have" section in your IRB.</span><br/>
   <span>I chose to use [Struct](https://www.leighhalliday.com/ruby-struct) because they behave kind of like ActiveRecords objects and as a Ruby developer you tend to work on Rails. You can throw me potatoes il you disagree. :potato:</span>
 

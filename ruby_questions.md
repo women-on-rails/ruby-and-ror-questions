@@ -197,7 +197,7 @@ nobel_prize_awarded_winners.map(&:category).tally
 
 <details><summary><b>Tips</b></summary>
   <p>
-    There are different methods <a href="https://teamtreehouse.com/library/adding-items-to-arrays-2">add elements</a> to an array.
+    There are different methods to <a href="https://teamtreehouse.com/library/adding-items-to-arrays-2">add elements</a> to an array.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -268,7 +268,7 @@ nobel_prize_awarded_winners.sample(2)
 
 <details><summary><b>Tips</b></summary>
   <p>
-    You can combine two methods: <a href="https://apidock.com/ruby/Array/include%3F">include?</a> and <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">map</a>.
+    You can combine two methods: <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">map</a> and <a href="https://apidock.com/ruby/Array/include%3F">include?</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
@@ -287,7 +287,7 @@ nobel_prize_awarded_winners.map { |awarded| awarded.name }.include?('Marie Curie
 ---
 
 
-##### 12. Get an array of all last names of the Nobel Prize winnes
+##### 12. Get an array of all last names of the Nobel Prize winners
 
 
 <details><summary><b>Tips</b></summary>

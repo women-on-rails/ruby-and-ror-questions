@@ -59,14 +59,14 @@ nobel_prize_awarded_winners.map { |awarded| awarded.year }
 
 <details><summary><b>Tips</b></summary>
   <p>
-    <strong>Map</strong> method, here is a <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">tutorial</a>.
+    <strong>Select</strong> method, here is a <a href="https://www.rubyguides.com/2019/04/ruby-select-method/">tutorial</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
   <p>
 
 ```ruby
-nobel_prize_awarded_winners.map { |awarded| awarded.year > 2000 }
+nobel_prize_awarded_winners.select { |awarded| awarded.year > 2000 }
 
 ```
 

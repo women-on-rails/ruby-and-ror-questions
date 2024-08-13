@@ -174,14 +174,14 @@ nobel_prize_awarded_winners.sort { |a, b| a.birthdate <=> b.birthdate }
 
 <details><summary><b>Tips</b></summary>
   <p>
-    There are several ways to deal with it, you can combine two methods: <a href="https://apidock.com/ruby/Enumerable/group_by">group_by</a> and <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">map</a>.
+    There are several ways to deal with it, you can combine two methods: <a href="https://www.rubyguides.com/2018/10/ruby-map-method/">map</a> and <a href="https://rubydoc.info/stdlib/core/Enumerable:tally">tally</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
   <p>
 
 ```ruby
-nobel_prize_awarded_winners.group_by { |awarded| awarded.category }.map { |k,v| [k, v.length] }.to_h
+nobel_prize_awarded_winners.map(&:category).tally
 
 ```
 

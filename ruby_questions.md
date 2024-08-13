@@ -244,7 +244,7 @@ nobel_prize_awarded_winners.pop
 
 <details><summary><b>Tips</b></summary>
   <p>
-    Think about <a href="https://www.youtube.com/watch?v=Voi_Y4NZV2c">hip-hop</a>.
+    Think about <a href="https://apidock.com/ruby/v2_5_5/Array/sample">hip-hop</a>.
   </p>
 
   <details><summary><b>Answer</b></summary>
